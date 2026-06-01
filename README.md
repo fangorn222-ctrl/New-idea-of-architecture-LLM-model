@@ -17,3 +17,11 @@ This repository extends that principle toward a trillion-scale, deployment-orien
 - an estimated 1.5 GPUs per logical replica on a 72-GPU node.
 
 No experimental validation has been performed for the specific architecture proposed here. This is a testable architecture and serving hypothesis, supported by parameter-count arithmetic, hardware-layout analysis, and the empirical motivation provided by UniPool.
+
+Acknowledgements
+
+I would like to thank the AI systems that helped me explore, refine, and express this proposal through extended technical discussion: ChatGPT, Claude, Grok, Gemini, Copilot, Kimi, and DeepSeek.
+
+They helped me study existing LLM architectures, check parameter-count reasoning, clarify the structure of the proposal, and improve the English presentation.
+
+All architectural claims, assumptions, mistakes, and final wording remain my own responsibility.
