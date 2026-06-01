@@ -1,0 +1,24 @@
+Update (May 2026).Shortly after the initial drafting of this proposal, an independent research group (Huang et al., UniPool, arXiv:2605.06665) published empirical evidence that shared expert pools can match or exceed per-layer MoE quality at significantly reduced parameter budgets. Their results validate the core principle underlying this architecture — that experts need not be replicated per layer, and that sublinear expert scaling is viable in practice.
+
+Our work extends this principle substantially further:
+
+hierarchical pooling (4‑layer depth‑locality instead of a single global pool),
+
+block‑structured phase alignment (8 MoE → 1 dense),
+
+uniform active compute,
+
+micro‑FFN layer‑specific stabilization,
+
+hardware‑aware trunk/exp disaggregation,
+
+κ‑scaling and superlinear efficiency predictions,
+
+and fleet‑scale economic modeling.
+
+Thus, while UniPool provides empirical confirmation of the foundational idea, the architecture presented here outlines a full-stack design for trillion‑scale MoE systems — from parameter layout to hardware topology — and predicts efficiency gains that grow with model size.
+
+The required investment remains one-time: developing and validating a training recipe for shared pools. The return is perpetual and multiplicative: every model trained with this principle, deployed on every node, benefits from sublinear infrastructure scaling.
+
+The question is no longer whether shared pools work — that has now been independently demonstrated.The question is how far this architectural advantage can scale, and who will operationalize it first.
+
